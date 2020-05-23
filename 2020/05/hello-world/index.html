@@ -73,7 +73,7 @@
   <div class="article-top-meta">
     <span class="posted-on">
       <a href="/personal-blog/2020/05/hello-world/" rel="bookmark">
-        <time class="entry-date published" datetime="2020-05-23T13:56:48.284Z">
+        <time class="entry-date published" datetime="2020-05-23T14:02:48.866Z">
           23/05/2020
         </time>
       </a>
@@ -120,6 +120,23 @@
 
   
 
+
+	<section id="comment" class="comment">
+		<div id="gitment"></div>
+	</section>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'javierdearcos',
+			repo: 'personal-blog',
+			oauth: {
+				client_id: 'd11681c573c4ce8db169',
+				client_secret: 'e4219552f752adbea8de0409af3d43685c0b4fe5',
+			},
+		})
+		gitment.render('gitment')
+	</script>
 
 
 
