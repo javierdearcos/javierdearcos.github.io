@@ -500,6 +500,23 @@ header .site-branding .site-description {
   font-size: 1.3rem;
   margin: 1rem 0 0;
 }
+header .site-branding .social-media {
+  margin: 20px 0;
+}
+header .site-branding .social-media a {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
+  color: #9e9e9e;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+header .site-branding .social-media a:hover {
+  color: #3a3a3a;
+}
+header .site-branding .social-media a .fa {
+  font-size: 25px;
+}
 header .site-navigation {
   text-align: center;
 }
