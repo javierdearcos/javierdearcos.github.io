@@ -668,6 +668,23 @@ article .article-footer .post-tags a:not(:last-of-type):after {
   content: ",";
   padding-right: 5px;
 }
+article .article-footer .article-meta > span {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+article .article-footer .article-share > div {
+  display: inline-block;
+}
+article .article-footer .article-share {
+  font-size: 2rem;
+  color: #707070;
+}
+article .article-footer .article-share i {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  vertical-align: top;
+}
 article code {
   padding: 2px 4px;
   margin-left: 2px;
