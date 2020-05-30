@@ -29,7 +29,7 @@ article .archive-tags,
 article .tags-cloud {
   margin: 8rem 0;
   font-size: 1.3rem;
-  color: #9e9e9e;
+  color: $primaryColour;
 }
 article .archive-tags a,
 article .tags-cloud a {
@@ -37,7 +37,7 @@ article .tags-cloud a {
 }
 article .archive-tags a:hover,
 article .tags-cloud a:hover {
-  color: #f03838;
+  color: #1e90ff;
 }
 article .archive-tags i,
 article .tags-cloud i {
