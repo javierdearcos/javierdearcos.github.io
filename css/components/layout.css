@@ -2,20 +2,22 @@ html {
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
 }
-p,
+p {
+  margin: 0;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 3rem 0 0 0;
 }
 a {
   text-decoration: none;
 }
 body {
-  background-color: #f7f7f7;
+  background-color: #c4d7ed;
   font-family: "Segoe UI", "Lucida Grande", Helvetica, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

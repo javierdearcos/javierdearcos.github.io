@@ -16,7 +16,7 @@ header .site-branding .site-title a {
   display: inline-block;
   color: #fff;
   font-weight: bolder;
-  background-color: #0050ff;
+  background-color: #183152;
   line-height: 3rem;
   height: 3rem;
   padding: 0 1rem;
@@ -27,7 +27,7 @@ header .site-branding .site-title a:hover {
   padding: 0 1.5rem;
 }
 header .site-branding .site-description {
-  color: #9e9e9e;
+  color: #375d81;
   font-size: 1.3rem;
   margin: 1rem 0 0;
 }
@@ -38,7 +38,7 @@ header .site-branding .social-media a {
   display: inline-block;
   position: relative;
   transition: all 0.3s ease-in-out 0s;
-  color: #9e9e9e;
+  color: #375d81;
   margin-right: 4px;
   margin-left: 4px;
 }
@@ -63,7 +63,7 @@ header .site-navigation ul li {
 }
 header .site-navigation ul li a {
   display: block;
-  color: #0050ff;
+  color: #183152;
   font-size: 1.6rem;
   line-height: 2rem;
   padding: 0 1rem;
