@@ -16,10 +16,29 @@ article:not(:first-child):before {
   margin-left: -75px;
 }
 article blockquote {
-  margin: 6rem 2rem;
-  padding-left: 15px;
-  line-height: 2rem;
-  border-left: 4px solid #183152;
+  background: #f9f9f9;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+article blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+article blockquote p {
+  display: inline;
+}
+article blockquote footer {
+  display: block;
+  color: #333;
+  margin-top: 1em;
+}
+article blockquote footer cite {
+  margin-left: 1em;
 }
 article .article-title {
   position: relative;
@@ -89,7 +108,7 @@ article .featured-media img {
 article .article-excerpt li,
 article .article-content li,
 article .featured-media li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 article .article-footer .pull-left {
   float: left;
