@@ -1,0 +1,961 @@
+<h1 id="Upgrading-Guide"><a href="#Upgrading-Guide" class="headerlink" title="Upgrading Guide"></a>Upgrading Guide</h1><p>See the <a href="./CHANGELOG.md">CHANGELOG.md</a> for detailed information about what has changed between versions.</p>
+<p>This guide is useful to figure out what you need to do between breaking changes.</p>
+<p>As always, <a href="https://github.com/FortAwesome/Font-Awesome/issues/new" target="_blank" rel="noopener">submit issues</a> that you run into with this guide or with these upgrades to us.</p>
+<hr>
+<h2 id="5-15-0-to-5-15-1"><a href="#5-15-0-to-5-15-1" class="headerlink" title="5.15.0 to 5.15.1"></a>5.15.0 to 5.15.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-14-0-to-5-15-0"><a href="#5-14-0-to-5-15-0" class="headerlink" title="5.14.0 to 5.15.0"></a>5.14.0 to 5.15.0</h2><p>The adobe icon has been removed by legal request of Adobe.</p>
+<p>Font Awesome is no longer able to provide any logos or marks for the Adobe<br>brand or their products.</p>
+<hr>
+<h2 id="5-12-x-5-13-x-to-5-14-0"><a href="#5-12-x-5-13-x-to-5-14-0" class="headerlink" title="5.12.x/5.13.x to 5.14.0"></a>5.12.x/5.13.x to 5.14.0</h2><p>In version 5.12.0 and 5.13.0 some of the icons were assigned unicode values<br>that were outside the Private Unicode Area (PUA). This caused problems with<br>some desktop software and caused the icons to show up as Chinese, Japanese, or<br>Korean (CJK) ideographs.</p>
+<p>The unicode values have been re-assigned to values within the PUA range.</p>
+<p>If you were using any of the following icons with pseudo-elements you will need<br>to change the CSS <code>content</code> value to the new unicode value.</p>
+<table>
+<thead>
+<tr>
+<th>Icon name</th>
+<th>Old</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bacteria</td>
+<td>f959</td>
+<td>e059</td>
+</tr>
+<tr>
+<td>bacterium</td>
+<td>f95a</td>
+<td>e05a</td>
+</tr>
+<tr>
+<td>box-tissue</td>
+<td>f95b</td>
+<td>e05b</td>
+</tr>
+<tr>
+<td>caravan-alt</td>
+<td>f900</td>
+<td>e000</td>
+</tr>
+<tr>
+<td>cat-space</td>
+<td>f901</td>
+<td>e001</td>
+</tr>
+<tr>
+<td>coffee-pot</td>
+<td>f902</td>
+<td>e002</td>
+</tr>
+<tr>
+<td>coffin-cross</td>
+<td>f951</td>
+<td>e051</td>
+</tr>
+<tr>
+<td>comet</td>
+<td>f903</td>
+<td>e003</td>
+</tr>
+<tr>
+<td>dailymotion</td>
+<td>f952</td>
+<td>e052</td>
+</tr>
+<tr>
+<td>deezer</td>
+<td>f977</td>
+<td>e077</td>
+</tr>
+<tr>
+<td>edge-legacy</td>
+<td>f978</td>
+<td>e078</td>
+</tr>
+<tr>
+<td>fan-table</td>
+<td>f904</td>
+<td>e004</td>
+</tr>
+<tr>
+<td>faucet</td>
+<td>f905</td>
+<td>e005</td>
+</tr>
+<tr>
+<td>faucet-drip</td>
+<td>f906</td>
+<td>e006</td>
+</tr>
+<tr>
+<td>firefox-browser</td>
+<td>f907</td>
+<td>e007</td>
+</tr>
+<tr>
+<td>folder-download</td>
+<td>f953</td>
+<td>e053</td>
+</tr>
+<tr>
+<td>folder-upload</td>
+<td>f954</td>
+<td>e054</td>
+</tr>
+<tr>
+<td>galaxy</td>
+<td>f908</td>
+<td>e008</td>
+</tr>
+<tr>
+<td>garage</td>
+<td>f909</td>
+<td>e009</td>
+</tr>
+<tr>
+<td>garage-car</td>
+<td>f90a</td>
+<td>e00a</td>
+</tr>
+<tr>
+<td>garage-open</td>
+<td>f90b</td>
+<td>e00b</td>
+</tr>
+<tr>
+<td>google-pay</td>
+<td>f979</td>
+<td>e079</td>
+</tr>
+<tr>
+<td>hand-holding-medical</td>
+<td>f95c</td>
+<td>e05c</td>
+</tr>
+<tr>
+<td>hand-sparkles</td>
+<td>f95d</td>
+<td>e05d</td>
+</tr>
+<tr>
+<td>hands-wash</td>
+<td>f95e</td>
+<td>e05e</td>
+</tr>
+<tr>
+<td>handshake-alt-slash</td>
+<td>f95f</td>
+<td>e05f</td>
+</tr>
+<tr>
+<td>handshake-slash</td>
+<td>f960</td>
+<td>e060</td>
+</tr>
+<tr>
+<td>head-side-cough</td>
+<td>f961</td>
+<td>e061</td>
+</tr>
+<tr>
+<td>head-side-cough-slash</td>
+<td>f962</td>
+<td>e062</td>
+</tr>
+<tr>
+<td>head-side-mask</td>
+<td>f963</td>
+<td>e063</td>
+</tr>
+<tr>
+<td>head-side-virus</td>
+<td>f964</td>
+<td>e064</td>
+</tr>
+<tr>
+<td>heat</td>
+<td>f90c</td>
+<td>e00c</td>
+</tr>
+<tr>
+<td>house</td>
+<td>f90d</td>
+<td>e00d</td>
+</tr>
+<tr>
+<td>house-day</td>
+<td>f90e</td>
+<td>e00e</td>
+</tr>
+<tr>
+<td>house-leave</td>
+<td>f90f</td>
+<td>e00f</td>
+</tr>
+<tr>
+<td>house-night</td>
+<td>f910</td>
+<td>e010</td>
+</tr>
+<tr>
+<td>house-return</td>
+<td>f911</td>
+<td>e011</td>
+</tr>
+<tr>
+<td>house-signal</td>
+<td>f912</td>
+<td>e012</td>
+</tr>
+<tr>
+<td>house-user</td>
+<td>f965</td>
+<td>e065</td>
+</tr>
+<tr>
+<td>ideal</td>
+<td>f913</td>
+<td>e013</td>
+</tr>
+<tr>
+<td>instagram-square</td>
+<td>f955</td>
+<td>e055</td>
+</tr>
+<tr>
+<td>lamp-desk</td>
+<td>f914</td>
+<td>e014</td>
+</tr>
+<tr>
+<td>lamp-floor</td>
+<td>f915</td>
+<td>e015</td>
+</tr>
+<tr>
+<td>laptop-house</td>
+<td>f966</td>
+<td>e066</td>
+</tr>
+<tr>
+<td>light-ceiling</td>
+<td>f916</td>
+<td>e016</td>
+</tr>
+<tr>
+<td>light-switch</td>
+<td>f917</td>
+<td>e017</td>
+</tr>
+<tr>
+<td>light-switch-off</td>
+<td>f918</td>
+<td>e018</td>
+</tr>
+<tr>
+<td>light-switch-on</td>
+<td>f919</td>
+<td>e019</td>
+</tr>
+<tr>
+<td>lungs-virus</td>
+<td>f967</td>
+<td>e067</td>
+</tr>
+<tr>
+<td>microblog</td>
+<td>f91a</td>
+<td>e01a</td>
+</tr>
+<tr>
+<td>microwave</td>
+<td>f91b</td>
+<td>e01b</td>
+</tr>
+<tr>
+<td>mixer</td>
+<td>f956</td>
+<td>e056</td>
+</tr>
+<tr>
+<td>outlet</td>
+<td>f91c</td>
+<td>e01c</td>
+</tr>
+<tr>
+<td>oven</td>
+<td>f91d</td>
+<td>e01d</td>
+</tr>
+<tr>
+<td>people-arrows</td>
+<td>f968</td>
+<td>e068</td>
+</tr>
+<tr>
+<td>pied-piper-square</td>
+<td>f91e</td>
+<td>e01e</td>
+</tr>
+<tr>
+<td>plane-slash</td>
+<td>f969</td>
+<td>e069</td>
+</tr>
+<tr>
+<td>planet-moon</td>
+<td>f91f</td>
+<td>e01f</td>
+</tr>
+<tr>
+<td>planet-ringed</td>
+<td>f920</td>
+<td>e020</td>
+</tr>
+<tr>
+<td>police-box</td>
+<td>f921</td>
+<td>e021</td>
+</tr>
+<tr>
+<td>portal-enter</td>
+<td>f922</td>
+<td>e022</td>
+</tr>
+<tr>
+<td>portal-exit</td>
+<td>f923</td>
+<td>e023</td>
+</tr>
+<tr>
+<td>pump-medical</td>
+<td>f96a</td>
+<td>e06a</td>
+</tr>
+<tr>
+<td>pump-soap</td>
+<td>f96b</td>
+<td>e06b</td>
+</tr>
+<tr>
+<td>radar</td>
+<td>f924</td>
+<td>e024</td>
+</tr>
+<tr>
+<td>raygun</td>
+<td>f925</td>
+<td>e025</td>
+</tr>
+<tr>
+<td>refrigerator</td>
+<td>f926</td>
+<td>e026</td>
+</tr>
+<tr>
+<td>rocket-launch</td>
+<td>f927</td>
+<td>e027</td>
+</tr>
+<tr>
+<td>rust</td>
+<td>f97a</td>
+<td>e07a</td>
+</tr>
+<tr>
+<td>sensor</td>
+<td>f928</td>
+<td>e028</td>
+</tr>
+<tr>
+<td>sensor-alert</td>
+<td>f929</td>
+<td>e029</td>
+</tr>
+<tr>
+<td>sensor-fire</td>
+<td>f92a</td>
+<td>e02a</td>
+</tr>
+<tr>
+<td>sensor-on</td>
+<td>f92b</td>
+<td>e02b</td>
+</tr>
+<tr>
+<td>sensor-smoke</td>
+<td>f92c</td>
+<td>e02c</td>
+</tr>
+<tr>
+<td>shield-virus</td>
+<td>f96c</td>
+<td>e06c</td>
+</tr>
+<tr>
+<td>shopify</td>
+<td>f957</td>
+<td>e057</td>
+</tr>
+<tr>
+<td>sink</td>
+<td>f96d</td>
+<td>e06d</td>
+</tr>
+<tr>
+<td>siren</td>
+<td>f92d</td>
+<td>e02d</td>
+</tr>
+<tr>
+<td>siren-on</td>
+<td>f92e</td>
+<td>e02e</td>
+</tr>
+<tr>
+<td>soap</td>
+<td>f96e</td>
+<td>e06e</td>
+</tr>
+<tr>
+<td>solar-system</td>
+<td>f92f</td>
+<td>e02f</td>
+</tr>
+<tr>
+<td>sort-circle</td>
+<td>f930</td>
+<td>e030</td>
+</tr>
+<tr>
+<td>sort-circle-down</td>
+<td>f931</td>
+<td>e031</td>
+</tr>
+<tr>
+<td>sort-circle-up</td>
+<td>f932</td>
+<td>e032</td>
+</tr>
+<tr>
+<td>space-station-moon</td>
+<td>f933</td>
+<td>e033</td>
+</tr>
+<tr>
+<td>space-station-moon-alt</td>
+<td>f934</td>
+<td>e034</td>
+</tr>
+<tr>
+<td>sprinkler</td>
+<td>f935</td>
+<td>e035</td>
+</tr>
+<tr>
+<td>star-shooting</td>
+<td>f936</td>
+<td>e036</td>
+</tr>
+<tr>
+<td>starfighter</td>
+<td>f937</td>
+<td>e037</td>
+</tr>
+<tr>
+<td>starfighter-alt</td>
+<td>f938</td>
+<td>e038</td>
+</tr>
+<tr>
+<td>starship</td>
+<td>f939</td>
+<td>e039</td>
+</tr>
+<tr>
+<td>starship-freighter</td>
+<td>f93a</td>
+<td>e03a</td>
+</tr>
+<tr>
+<td>stopwatch-20</td>
+<td>f96f</td>
+<td>e06f</td>
+</tr>
+<tr>
+<td>store-alt-slash</td>
+<td>f970</td>
+<td>e070</td>
+</tr>
+<tr>
+<td>store-slash</td>
+<td>f971</td>
+<td>e071</td>
+</tr>
+<tr>
+<td>sword-laser</td>
+<td>f93b</td>
+<td>e03b</td>
+</tr>
+<tr>
+<td>sword-laser-alt</td>
+<td>f93c</td>
+<td>e03c</td>
+</tr>
+<tr>
+<td>swords-laser</td>
+<td>f93d</td>
+<td>e03d</td>
+</tr>
+<tr>
+<td>telescope</td>
+<td>f93e</td>
+<td>e03e</td>
+</tr>
+<tr>
+<td>temperature-down</td>
+<td>f93f</td>
+<td>e03f</td>
+</tr>
+<tr>
+<td>temperature-up</td>
+<td>f940</td>
+<td>e040</td>
+</tr>
+<tr>
+<td>tiktok</td>
+<td>f97b</td>
+<td>e07b</td>
+</tr>
+<tr>
+<td>toilet-paper-slash</td>
+<td>f972</td>
+<td>e072</td>
+</tr>
+<tr>
+<td>trailer</td>
+<td>f941</td>
+<td>e041</td>
+</tr>
+<tr>
+<td>transporter</td>
+<td>f942</td>
+<td>e042</td>
+</tr>
+<tr>
+<td>transporter-1</td>
+<td>f943</td>
+<td>e043</td>
+</tr>
+<tr>
+<td>transporter-2</td>
+<td>f944</td>
+<td>e044</td>
+</tr>
+<tr>
+<td>transporter-3</td>
+<td>f945</td>
+<td>e045</td>
+</tr>
+<tr>
+<td>transporter-empty</td>
+<td>f946</td>
+<td>e046</td>
+</tr>
+<tr>
+<td>ufo</td>
+<td>f947</td>
+<td>e047</td>
+</tr>
+<tr>
+<td>ufo-beam</td>
+<td>f948</td>
+<td>e048</td>
+</tr>
+<tr>
+<td>unity</td>
+<td>f949</td>
+<td>e049</td>
+</tr>
+<tr>
+<td>unsplash</td>
+<td>f97c</td>
+<td>e07c</td>
+</tr>
+<tr>
+<td>user-alien</td>
+<td>f94a</td>
+<td>e04a</td>
+</tr>
+<tr>
+<td>user-robot</td>
+<td>f94b</td>
+<td>e04b</td>
+</tr>
+<tr>
+<td>user-unlock</td>
+<td>f958</td>
+<td>e058</td>
+</tr>
+<tr>
+<td>user-visor</td>
+<td>f94c</td>
+<td>e04c</td>
+</tr>
+<tr>
+<td>users-slash</td>
+<td>f973</td>
+<td>e073</td>
+</tr>
+<tr>
+<td>vacuum</td>
+<td>f94d</td>
+<td>e04d</td>
+</tr>
+<tr>
+<td>vacuum-robot</td>
+<td>f94e</td>
+<td>e04e</td>
+</tr>
+<tr>
+<td>virus</td>
+<td>f974</td>
+<td>e074</td>
+</tr>
+<tr>
+<td>virus-slash</td>
+<td>f975</td>
+<td>e075</td>
+</tr>
+<tr>
+<td>viruses</td>
+<td>f976</td>
+<td>e076</td>
+</tr>
+<tr>
+<td>window-frame</td>
+<td>f94f</td>
+<td>e04f</td>
+</tr>
+<tr>
+<td>window-frame-open</td>
+<td>f950</td>
+<td>e050</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="5-13-0-to-5-13-1"><a href="#5-13-0-to-5-13-1" class="headerlink" title="5.13.0 to 5.13.1"></a>5.13.0 to 5.13.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-12-1-to-5-13-0"><a href="#5-12-1-to-5-13-0" class="headerlink" title="5.12.1 to 5.13.0"></a>5.12.1 to 5.13.0</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-12-0-to-5-12-1"><a href="#5-12-0-to-5-12-1" class="headerlink" title="5.12.0 to 5.12.1"></a>5.12.0 to 5.12.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-11-2-to-5-12-0"><a href="#5-11-2-to-5-12-0" class="headerlink" title="5.11.2 to 5.12.0"></a>5.11.2 to 5.12.0</h2><p>The 9-pointed icon named “haykal” was renamed to “bahai” to better match the<br>symbol. If you were previously using the misnamed icon rename to “bahai” when<br>upgrading.</p>
+<hr>
+<h2 id="5-11-1-to-5-11-2"><a href="#5-11-1-to-5-11-2" class="headerlink" title="5.11.1 to 5.11.2"></a>5.11.1 to 5.11.2</h2><p>The scanner-image icon was previously using the same unicode value as the scanner icon.</p>
+<p>This has now been fixed and the scanner-image icon has a unique unicode value.</p>
+<p>The film-canister icon was misspelled as “film-cannister”. This has been fixed.</p>
+<hr>
+<h2 id="5-11-0-to-5-11-1"><a href="#5-11-0-to-5-11-1" class="headerlink" title="5.11.0 to 5.11.1"></a>5.11.0 to 5.11.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-10-2-to-5-11-0"><a href="#5-10-2-to-5-11-0" class="headerlink" title="5.10.2 to 5.11.0"></a>5.10.2 to 5.11.0</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-10-1-to-5-10-2"><a href="#5-10-1-to-5-10-2" class="headerlink" title="5.10.1 to 5.10.2"></a>5.10.1 to 5.10.2</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-10-0-to-5-10-1"><a href="#5-10-0-to-5-10-1" class="headerlink" title="5.10.0 to 5.10.1"></a>5.10.0 to 5.10.1</h2><p>The Sass function <code>fa-content-secondary</code> which was part of the <code>duotone.scss</code><br>file has been removed due to its inconsistent behavior in different versions of<br>Sass pre-processors. Specifically <a href="https://github.com/sass/node-sass" target="_blank" rel="noopener"><code>node-sass</code></a> and<br><a href="https://github.com/sass/dart-sass" target="_blank" rel="noopener"><code>sass</code></a> didn’t produce the same output.</p>
+<hr>
+<h2 id="5-9-0-to-5-10-0"><a href="#5-9-0-to-5-10-0" class="headerlink" title="5.9.0 to 5.10.0"></a>5.9.0 to 5.10.0</h2><p>The following icon shims have been changed to better match the original version 4 icon:</p>
+<ul>
+<li>sort-alpha-desc</li>
+<li>sort-amount-desc</li>
+<li>sort-numeric-desc</li>
+</ul>
+<hr>
+<h2 id="5-8-2-to-5-9-0"><a href="#5-8-2-to-5-9-0" class="headerlink" title="5.8.2 to 5.9.0"></a>5.8.2 to 5.9.0</h2><p>The nintendo-switch icon has been removed by legal request of Nintendo of America Inc.</p>
+<p>Font Awesome is no longer able to provide icons related to Nintendo, their<br>gaming consoles, accessories, or games.</p>
+<hr>
+<h2 id="5-8-1-to-5-8-2"><a href="#5-8-1-to-5-8-2" class="headerlink" title="5.8.1 to 5.8.2"></a>5.8.1 to 5.8.2</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-8-0-to-5-8-1"><a href="#5-8-0-to-5-8-1" class="headerlink" title="5.8.0 to 5.8.1"></a>5.8.0 to 5.8.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-7-x-to-5-8-0"><a href="#5-7-x-to-5-8-0" class="headerlink" title="5.7.x to 5.8.0"></a>5.7.x to 5.8.0</h2><h3 id="Removing-title-elements-from-SVG-sprites"><a href="#Removing-title-elements-from-SVG-sprites" class="headerlink" title="Removing title elements from SVG sprites"></a>Removing title elements from SVG sprites</h3><p>Since the initial release of version 5, all the way back to 5.0.0 actually,<br>we’ve included <code>&lt;title&gt;</code> elements in the SVG sprites.</p>
+<p>In <a href="https://github.com/FortAwesome/Font-Awesome/issues/14595" target="_blank" rel="noopener">https://github.com/FortAwesome/Font-Awesome/issues/14595</a> a discussion<br>outlines that this practice actually prevents normal efforts to make these<br>sprites accessible according to web accessibility standards.</p>
+<p>If you are using sprites please refer to <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility" target="_blank" rel="noopener">our documentation on accessibility with Font Awesome</a>.</p>
+<h3 id="Removing-vertical-align-from-the-fa-icon-Sass-mixin"><a href="#Removing-vertical-align-from-the-fa-icon-Sass-mixin" class="headerlink" title="Removing vertical-align from the .fa-icon Sass mixin"></a>Removing vertical-align from the .fa-icon Sass mixin</h3><p>Font Awesome has supported Sass and Less CSS pre-processors for a long time.</p>
+<p>The version 5 <code>.fa-icon</code> mixin which is present in <code>scss/_mixins.scss</code><br>previously included <code>vertical-align</code> which was incorrectly shifting icons.</p>
+<p>If you have used this mixin in your own Sass files you will need to check the<br>alignment of those icons after upgrading to 5.8.0.</p>
+<hr>
+<h2 id="5-7-1-to-5-7-2"><a href="#5-7-1-to-5-7-2" class="headerlink" title="5.7.1 to 5.7.2"></a>5.7.1 to 5.7.2</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-7-0-to-5-7-1"><a href="#5-7-0-to-5-7-1" class="headerlink" title="5.7.0 to 5.7.1"></a>5.7.0 to 5.7.1</h2><p>The cheeseburger icon incorrectly placed the cheese <em>under</em> the patty. This is unacceptable and we’ve fixed it.</p>
+<hr>
+<h2 id="5-6-x-to-5-7-0"><a href="#5-6-x-to-5-7-0" class="headerlink" title="5.6.x to 5.7.0"></a>5.6.x to 5.7.0</h2><h3 id="OTF-and-TTF-files"><a href="#OTF-and-TTF-files" class="headerlink" title="OTF and TTF files"></a>OTF and TTF files</h3><p>The PostScript name has been changed from <code>FontAwesome5ProSolid</code> to <code>FontAwesome5Pro-Solid</code>. This was done to be more compatible with tooling such as XCode.</p>
+<p>We’ve also update the <code>Version</code> specifier. Font files only support a MAJOR and MINOR version number so we have modifed our schema. For example, version 5.7.0 of Font Awesome is reflected as 329.472 in the individual font files.</p>
+<h3 id="Icon-changes"><a href="#Icon-changes" class="headerlink" title="Icon changes"></a>Icon changes</h3><p>The calendar-alt icon has been reverted back to the previous design in versions &lt;= 5.6.0.</p>
+<hr>
+<h2 id="5-6-x-to-5-6-3"><a href="#5-6-x-to-5-6-3" class="headerlink" title="5.6.x to 5.6.3"></a>5.6.x to 5.6.3</h2><p>The fire icon has been reverted back to the previous design in versions &lt;= 5.5.0.</p>
+<p>We have moved the redesigned icon to fire-alt.</p>
+<hr>
+<h2 id="5-6-0-to-5-6-1"><a href="#5-6-0-to-5-6-1" class="headerlink" title="5.6.0 to 5.6.1"></a>5.6.0 to 5.6.1</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-5-0-to-5-6-0"><a href="#5-5-0-to-5-6-0" class="headerlink" title="5.5.0 to 5.6.0"></a>5.5.0 to 5.6.0</h2><p>In this release we’ve taken time to re-organize the directory structure to<br>prevent redundancy and improve findability.</p>
+<h3 id="Directory-structure-changes"><a href="#Directory-structure-changes" class="headerlink" title="Directory structure changes"></a>Directory structure changes</h3><table>
+<thead>
+<tr>
+<th>Old path</th>
+<th>New path</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>advanced-options/metadata</td>
+<td>metadata</td>
+</tr>
+<tr>
+<td>advanced-options/raw-svg</td>
+<td>svgs</td>
+</tr>
+<tr>
+<td>advanced-options/svg-sprites</td>
+<td>sprites</td>
+</tr>
+<tr>
+<td>advanced-options/use-with-node-js</td>
+<td>js-packages</td>
+</tr>
+<tr>
+<td>svg-with-js/js</td>
+<td>js</td>
+</tr>
+<tr>
+<td>svg-with-js/css</td>
+<td>css</td>
+</tr>
+<tr>
+<td>use-on-desktop</td>
+<td>otfs</td>
+</tr>
+<tr>
+<td>web-fonts-with-css/css</td>
+<td>css</td>
+</tr>
+<tr>
+<td>web-fonts-with-css/less</td>
+<td>less</td>
+</tr>
+<tr>
+<td>web-fonts-with-css/scss</td>
+<td>scss</td>
+</tr>
+<tr>
+<td>web-fonts-with-css/webfonts</td>
+<td>webfonts</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="5-4-x-to-5-5-0"><a href="#5-4-x-to-5-5-0" class="headerlink" title="5.4.x to 5.5.0"></a>5.4.x to 5.5.0</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-4-0-to-5-4-1"><a href="#5-4-0-to-5-4-1" class="headerlink" title="5.4.0 to 5.4.1"></a>5.4.0 to 5.4.1</h2><p>Categories were renamed from:</p>
+<ul>
+<li>Holiday to Halloween</li>
+<li>Seasonal to Autumn</li>
+</ul>
+<p>The “wand” icon in version 5.4.0 matched the “wand-magic” icon. The magical<br>sparkles have been removed for “wand”. If you were relying on this decoration<br>in your design switch to “wand-magic” to bring the magic back.</p>
+<hr>
+<h2 id="5-3-x-to-5-4-0"><a href="#5-3-x-to-5-4-0" class="headerlink" title="5.3.x to 5.4.0"></a>5.3.x to 5.4.0</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-3-0-to-5-3-1"><a href="#5-3-0-to-5-3-1" class="headerlink" title="5.3.0 to 5.3.1"></a>5.3.0 to 5.3.1</h2><p>The following Pro-only icons were removed from Font Awesome Free as of 5.3.1:</p>
+<ul>
+<li>abacus</li>
+<li>calculator-alt</li>
+<li>empty-set</li>
+<li>function</li>
+<li>integral</li>
+<li>intersection</li>
+<li>lambda</li>
+<li>omega</li>
+<li>pi</li>
+<li>sigma</li>
+<li>signal-alt</li>
+<li>signal-alt-slash</li>
+<li>signal-slash</li>
+<li>square-root</li>
+<li>tally</li>
+<li>theta</li>
+<li>tilde</li>
+<li>union</li>
+<li>value-absolute</li>
+<li>volume</li>
+<li>volume-down</li>
+<li>volume-slash</li>
+<li>wifi-slash</li>
+</ul>
+<p>These icons were unintentionally included in 5.3.0.</p>
+<hr>
+<h2 id="5-x-x-to-5-3-0"><a href="#5-x-x-to-5-3-0" class="headerlink" title="5.x.x to 5.3.0"></a>5.x.x to 5.3.0</h2><p>Sass mixin syntax has been updated to address a bug.</p>
+<p>Use <code>@extend %fa-icon</code> to correctly maintain CSS order in output files.</p>
+<p><del>Old way:</del></p>
+<pre><code>.twitter {
+  @include fa-icon; /* incorrect */
+  @extend .fab;
+
+  &amp;:before {
+    content: fa-content($fa-var-twitter);
+  }
+}</code></pre><p>New way:</p>
+<pre><code>.twitter {
+  @extend %fa-icon; /* correct */
+  @extend .fab;
+
+  &amp;:before {
+    content: fa-content($fa-var-twitter);
+  }
+}</code></pre><hr>
+<h2 id="5-1-x-to-5-2-x"><a href="#5-1-x-to-5-2-x" class="headerlink" title="5.1.x to 5.2.x"></a>5.1.x to 5.2.x</h2><p>There are no breaking changes in this version upgrade.</p>
+<hr>
+<h2 id="5-1-0-to-5-1-1"><a href="#5-1-0-to-5-1-1" class="headerlink" title="5.1.0 to 5.1.1"></a>5.1.0 to 5.1.1</h2><p>Less and Sass files incorrectly contained the “fa-“ prefix for style files.<br>These files have been renamed to be consistent with other files in the<br>packages.</p>
+<p>If you are using the Less or Sass file styles individually you will need to<br>correct the names in your builds.</p>
+<table>
+<thead>
+<tr>
+<th>Old filename</th>
+<th>New filename</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>less/fa-solid.less</td>
+<td>less/solid.less</td>
+</tr>
+<tr>
+<td>less/fa-regular.less</td>
+<td>less/regular.less</td>
+</tr>
+<tr>
+<td>less/fa-light.less</td>
+<td>less/light.less</td>
+</tr>
+<tr>
+<td>less/fa-brands.less</td>
+<td>less/brands.less</td>
+</tr>
+<tr>
+<td>scss/fa-solid.scss</td>
+<td>scss/solid.scss</td>
+</tr>
+<tr>
+<td>scss/fa-regular.scss</td>
+<td>scss/regular.scss</td>
+</tr>
+<tr>
+<td>scss/fa-light.scss</td>
+<td>scss/light.scss</td>
+</tr>
+<tr>
+<td>scss/fa-brands.scss</td>
+<td>scss/brands.scss</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="5-0-x-to-5-1-0"><a href="#5-0-x-to-5-1-0" class="headerlink" title="5.0.x to 5.1.0"></a>5.0.x to 5.1.0</h2><h3 id="New-packages-available-for-browser-only-integration"><a href="#New-packages-available-for-browser-only-integration" class="headerlink" title="New packages available for browser-only integration"></a>New packages available for browser-only integration</h3><p><strong>If you were previously using @fortawesome/fontawesome you need to switch to one of the new packages.</strong></p>
+<p>Our Free and Pro CDN provide access to JS, CSS, sprites, and separate SVG files.</p>
+<p>We’ve now made these files conveniently available through NPM.</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/@fortawesome/fontawesome-free" target="_blank" rel="noopener">@fortawesome/fontawesome-free</a></li>
+<li>@fortawesome/fontawesome-pro (private package, requires Pro subscription)</li>
+</ul>
+<p>If you are familiar with the paths and options available with the CDN these<br>packages should be familiar.</p>
+<p>Information about <a href="https://fontawesome.com/pro" target="_blank" rel="noopener">Font Awesome Pro subscriptions</a><br>can be found in your <a href="https://fontawesome.com/account/services" target="_blank" rel="noopener">Font Awesome awesome<br>account</a>.</p>
+<h3 id="Renamed-packages"><a href="#Renamed-packages" class="headerlink" title="Renamed packages"></a>Renamed packages</h3><p>The following packages have been renamed as part of 5.1.0 of Font Awesome.</p>
+<p><em>All packages are in the <a href="https://www.npmjs.com/search?q=scope:fortawesome&ranking=optimal" target="_blank" rel="noopener">@fortawesome NPM scope</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Old package(1)</th>
+<th>New package</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fontawesome-free-webfonts</td>
+<td>fontawesome-free</td>
+</tr>
+<tr>
+<td>fontawesome-pro-webfonts</td>
+<td>fontawesome-pro</td>
+</tr>
+<tr>
+<td>fontawesome-free-solid</td>
+<td>free-solid-svg-icons</td>
+</tr>
+<tr>
+<td>fontawesome-free-regular</td>
+<td>free-regular-svg-icons</td>
+</tr>
+<tr>
+<td>fontawesome-free-brands</td>
+<td>free-brands-svg-icons</td>
+</tr>
+<tr>
+<td>fontawesome-pro-solid</td>
+<td>pro-solid-svg-icons</td>
+</tr>
+<tr>
+<td>fontawesome-pro-regular</td>
+<td>pro-regular-svg-icons</td>
+</tr>
+<tr>
+<td>fontawesome-pro-light</td>
+<td>pro-light-svg-icons</td>
+</tr>
+</tbody></table>
+<p>(1) Old packages have now been deprecated. They are still available but will only receive high priority patch release fixes.</p>
+<p><strong>You’ll need to update your package.json file with the renamed packages and new versions.</strong></p>
+<h3 id="No-more-default-imports"><a href="#No-more-default-imports" class="headerlink" title="No more default imports"></a>No more default imports</h3><p>Recently we spent a good deal of time supporting TypeScript to enable us to<br>create the Angular Font Awesome component. During that adventure we<br><a href="https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html" target="_blank" rel="noopener">were</a><br><a href="https://blog.neufund.org/why-we-have-banned-default-exports-and-you-should-do-the-same-d51fdc2cf2ad" target="_blank" rel="noopener">convinced</a><br>that we were going to remove default exports from all of our components,<br>libraries, and packages. This is complete with the umbrella release of <code>5.1.0</code> of Font Awesome.</p>
+<p>What does that mean?</p>
+<p><del>Old way:</del></p>
+<pre><code class="javascript"><span class="keyword">import</span> fontawesome <span class="keyword">from</span> <span class="string">'@fortawesome/fontawesome'</span>
+<span class="keyword">import</span> solid <span class="keyword">from</span> <span class="string">'@fortawesome/fontawesome-free-solid'</span>
+<span class="keyword">import</span> faTwitter <span class="keyword">from</span> <span class="string">'@fortawesome/fontawesome-free-brands/faTwitter'</span>
+<span class="keyword">import</span> FontAwesomeIcon <span class="keyword">from</span> <span class="string">'@fortawesome/vue-fontawesome'</span>
+
+library.add(solid, faTwitter)</code></pre>
+<p>New way:</p>
+<pre><code class="javascript"><span class="keyword">import</span> { library, dom } <span class="keyword">from</span> <span class="string">'@fortawesome/fontawesome-svg-core'</span>
+<span class="keyword">import</span> { fas } <span class="keyword">from</span> <span class="string">'@fortawesome/free-solid-svg-icons'</span>
+<span class="keyword">import</span> { faTwitter } <span class="keyword">from</span> <span class="string">'@fortawesome/free-brands-svg-icons'</span>
+<span class="keyword">import</span> { FontAwesomeIcon } <span class="keyword">from</span> <span class="string">'@fortawesome/vue-fontawesome'</span>
+
+library.add(fas, faTwitter)
+
+<span class="comment">// Kicks off the process of finding &lt;i&gt; tags and replacing with &lt;svg&gt;</span>
+dom.watch()</code></pre>
+<p>This is also a valid way to import icons that works if your tool does not support tree shaking:</p>
+<pre><code class="javascript"><span class="keyword">import</span> { faTwitter } <span class="keyword">from</span> <span class="string">'@fortawesome/free-brands-svg-icons/faTwitter'</span></code></pre>
+<h3 id="Improved-support-for-tree-shaking"><a href="#Improved-support-for-tree-shaking" class="headerlink" title="Improved support for tree shaking"></a>Improved support for tree shaking</h3><p>Tree shaking is now functional by default and no additional configuration is required to make it work.</p>
+<p>The <code>shakable.es.js</code> module has been removed and is no longer needed.</p>
+<p>If you’ve previously configured tree shaking by modifying your webpack or rollup you can safely remove these.</p>
+<p><strong>We recommend that you check your bundle size after upgrading an ensure that file sizes are as you would expect.</strong></p>
+<pre><code class="javascript"><span class="built_in">module</span>.exports = {
+  <span class="comment">// ...</span>
+  resolve: {
+    alias: {
+      <span class="string">'@fortawesome/fontawesome-free-solid$'</span>: <span class="string">'@fortawesome/fontawesome-free-solid/shakable.es.js'</span>
+    }
+  }
+}</code></pre>
+<pre><code class="javascript"><span class="keyword">const</span> alias = <span class="built_in">require</span>(<span class="string">'rollup-plugin-alias'</span>)
+
+rollup({
+  <span class="comment">// ...</span>
+  plugins: [
+    alias({
+      <span class="string">'@fortawesome/fontawesome-free-solid'</span>: <span class="string">'node_modules/@fortawesome/fontawesome-free-solid/shakable.es.js'</span>
+    })
+  ]
+})</code></pre>
+<hr>
+<h2 id="5-0-11-to-5-0-12"><a href="#5-0-11-to-5-0-12" class="headerlink" title="5.0.11 to 5.0.12"></a>5.0.11 to 5.0.12</h2><p>Due to a collision with the “r” glyph the R Project brand icon has been renamed to <code>r-project</code>.</p>
+<hr>
+<h2 id="5-0-x-to-5-0-6"><a href="#5-0-x-to-5-0-6" class="headerlink" title="5.0.x to 5.0.6"></a>5.0.x to 5.0.6</h2><h3 id="SVG-Attribute-was-changed-from-data-fa-processed-to-data-fa-i2svg"><a href="#SVG-Attribute-was-changed-from-data-fa-processed-to-data-fa-i2svg" class="headerlink" title="SVG Attribute was changed from data-fa-processed to data-fa-i2svg"></a>SVG Attribute was changed from data-fa-processed to data-fa-i2svg</h3><p>As part of a bug fix for the release of 5.0.6 we renamed an attribute that was found on <code>&lt;svg&gt;</code> elements from<br><code>data-fa-processed</code> to <code>data-fa-i2svg</code>. We feel this more accurately reflects the intent and purpose.</p>
+<p>This attribute is added to any icon that has been generated using <code>fontawesome.dom.i2svg()</code>.</p>
+<p>Be aware that <code>data-fa-i2svg</code> (or <code>data-fa-processed</code>) will no longer be present on icons that are created using<br><code>fontawesome.icon()</code>.</p>
+<p>If you’ve written and DOM queries that rely on <code>data-fa-processed</code> you should get things working again by doing a<br>simple find and replace.</p>
