@@ -4,49 +4,56 @@
   <url>
     <loc>https://javierdearcos.com/categories/index.html</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
   <url>
     <loc>https://javierdearcos.com/tags/index.html</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://javierdearcos.com/2021/03/pull-requests/</loc>
+    
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
   <url>
     <loc>https://javierdearcos.com/2021/02/technical-tests/</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
   <url>
     <loc>https://javierdearcos.com/2020/06/hello-world/</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
   <url>
     <loc>https://javierdearcos.com/2020/07/clean-code/</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
   <url>
     <loc>https://javierdearcos.com/2021/01/2020/</loc>
     
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://javierdearcos.com/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -54,28 +61,28 @@
   
   <url>
     <loc>https://javierdearcos.com/tags/personal/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://javierdearcos.com/tags/desarrollo/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://javierdearcos.com/tags/carrera-profesional/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://javierdearcos.com/tags/procesos-de-seleccion/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -84,21 +91,28 @@
   
   <url>
     <loc>https://javierdearcos.com/categories/personal/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://javierdearcos.com/categories/principios-patrones-y-practicas-de-programacion/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://javierdearcos.com/categories/desarrollo/</loc>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://javierdearcos.com/categories/carrera-profesional/</loc>
-    <lastmod>2021-03-09</lastmod>
+    <lastmod>2021-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
